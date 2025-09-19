@@ -53,11 +53,11 @@ company-project-folder/
 - **Cloudinary** account (for image uploads)
 
 ### 2️⃣ Clone the Repository
-```bash
+
 git clone https://github.com/<your-username>/company-project.git
 cd company-project-folder
 
-3️⃣ Backend Setup
+### 3️⃣ Backend Setup
 
 Create a .env file inside backend/:
 PORT=5000
@@ -76,13 +76,13 @@ CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_API_SECRET=your_api_secret
 CLOUDINARY_FOLDER=company_module
 
-#Install dependencies and start the server:
+### Install dependencies and start the server:
 
 cd backend
 npm install
 npm run dev   # or: node src/server.js
 
-4️⃣ Database
+### 4️⃣ Database
 
 Run the SQL to create the company_profile table:
 
@@ -103,13 +103,13 @@ CREATE TABLE IF NOT EXISTS company_profile (
     social_links    JSONB,
     updated_at      TIMESTAMP DEFAULT NOW()
 );
-5️⃣ Frontend Setup
+### 5️⃣ Frontend Setup
 
 cd frontend
 npm install
 npm run dev   # Starts Vite/React dev server
 
-💡 Usage
+### 💡 Usage
 
 Register → Create a user account.
 
@@ -122,7 +122,7 @@ Upload Logo/Banner → Select an image to upload to Cloudinary.
 Update Profile → Edit fields and re-save.
 
 
-✅ Internship Notes
+### ✅ Internship Notes
 
 This project was built as part of an internship task to demonstrate:
 
@@ -132,12 +132,12 @@ Image uploading and third-party integration (Cloudinary)
 
 Secure API authentication (JWT)
 
-📜 License
+### 📜 License
 
 This project is for educational/internship use.
 Feel free to fork and extend it
 
-👤 Author
+### 👤 Author
 
 Your Name
 📧 chinthala.shivani0@gmail.com
