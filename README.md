@@ -62,14 +62,17 @@ cd company-project-folder
 Create a .env file inside backend/:
 PORT=5000
 
+
 DB_HOST=localhost
 DB_PORT=5432
 DB_USER=postgres
 DB_PASSWORD=your_db_password
 DB_NAME=company_db
 
+
 JWT_SECRET=supersecret
 JWT_EXPIRES_IN=90d
+
 
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
@@ -86,23 +89,40 @@ npm run dev   # or: node src/server.js
 
 Run the SQL to create the company_profile table:
 
+
 CREATE TABLE IF NOT EXISTS company_profile (
+
     owner_id        INT UNIQUE NOT NULL,
+
     company_name    TEXT NOT NULL,
+    
     address         TEXT,
+    
     city            TEXT,
+    
     state           TEXT,
+    
     country         TEXT,
+    
     postal_code     TEXT,
+    
     website         TEXT,
+    
     company_logo_url TEXT,
+    
     company_banner_url TEXT,
+    
     industry        TEXT,
+    
     founded_date    DATE,
+    
     description     TEXT,
+    
     social_links    JSONB,
+    
     updated_at      TIMESTAMP DEFAULT NOW()
 );
+
 ### 5️⃣ Frontend Setup
 
 cd frontend
